@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "70fe5f40-47d3-4b14-8b78-867123f51ce3",
+		"name": "Outgoing Rules",
+		"description": "API для работы с исходящим кампании и справочниками",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "10763179-70fe5f40-47d3-4b14-8b78-867123f51ce3"
+	},
+	"item": [
+		{
+			"name": "Get Rule",
+			"id": "85ac87d3-0a0c-47a4-b91f-47e8f27d1088",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "t1.9euelZqTj8uOyJ6VmpuQmM-dxpaSku3rnpWampiJz86ei8iLz5nHmcjNz8_l8_cLEx9O-e9BCBY9_d3z90tBHE7570EIFj39zef1656VmpaZzMjOlJGRmZuKzs3OiZPO7_zF656VmpaZzMjOlJGRmZuKzs3OiZPO.pBp0EKdhFrJ-yGV4jBxGXIL6t722BsCC7GD_C1GpH_9MrdhcXIrWhE2lRBaIy7M0tClFqnQtCA_nvt-RedXEBA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"url": {
+					"raw": "https://it-prog4.profit-ug.ru:8443/api/Outgoing/rules/:id",
+					"protocol": "https",
+					"host": [
+						"it-prog4",
+						"profit-ug",
+						"ru"
+					],
+					"port": "8443",
+					"path": [
+						"api",
+						"Outgoing",
+						"rules",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b439"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить все исходящие кампании",
+			"id": "afdea68e-7d32-4b51-8827-94c8e62fd4d9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "entityId",
+						"value": "{{entityId}}",
+						"description": "Id Организации"
+					}
+				],
+				"url": {
+					"raw": "https://{{host}}/api/Outgoing/rules",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Outgoing",
+						"rules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Rule",
+			"id": "9269c99e-a84e-42b8-bc91-f48d62d3758e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"CustomField1\": null,\r\n        \"Name\": \"Новая кампания эпоха 3\",\r\n        \"ScriptId\": \"70cce53e-4485-46d0-8210-2ff7c6482c83\",\r\n        \"Script\": null,\r\n        \"WorkCalendarId\": \"7db2ff28-3c06-4356-b0e6-f1ed0561b062\",\r\n        \"WorkCalendar\": null,\r\n        \"MasterScriptId\": \"24b51208-66a1-4397-8dc8-dca5efad34ce\",\r\n        \"MasterScript\": null,\r\n        \"WithRecord\": true,\r\n        \"SimultaneouslyCalling\": 1,\r\n        \"OutgoingLine\": \"\",\r\n        \"VirtualLineId\": null,\r\n        \"VirtualLine\": null,\r\n        \"CurrentStatus\": \"cs\",\r\n        \"TextToSpeech\": \"\",\r\n        \"StartDate\": \"2023-05-21T21:00:00\",\r\n        \"StartDateJS\": \"\",\r\n        \"EndDate\": \"2023-05-25T21:00:00\",\r\n        \"EndDateJS\": null,\r\n        \"IsActual\": false,\r\n        \"Description\": \"desc\",\r\n        \"MaxCallsCount\": 1,\r\n        \"TimeBetweenCalls\": 600,\r\n        \"ExtendedFields\": \"\",\r\n        \"CreatedDate\": \"2023-05-26T14:12:13.053244\",\r\n        \"Abonents\": [],\r\n        \"CountAbonents\": 0,\r\n        \"IsAbonentsLoadedFully\": true,\r\n        \"RuleType\": \"Обзвон\",\r\n        \"Id\": \"0f8765f2-e7e4-4990-b9d9-c14e5ae4b439\",\r\n        \"IsDeleted\": false,\r\n        \"IsSaved\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/Outgoing/rules",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Outgoing",
+						"rules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add abonents",
+			"id": "0683abcd-aad5-4f22-95ad-e24dbb9e9257",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"OutgoingRuleId\": \"0f8765f2-e7e4-4990-b9d9-c14e5ae4b438\",\r\n        \"UserId\": null,\r\n        \"UserExternalId\": null,\r\n        \"UserName\": \"v1\",\r\n        \"UserPhone\": \"p1\",\r\n        \"UserProperties\": null,\r\n        \"TextToSpeech\": \"tts\",\r\n        \"ExtendedFields\": \"ef\",\r\n        \"CurrentStatus\": \"CS\",\r\n        \"LastCallTime\": null,\r\n        \"CallCount\": 0,\r\n        \"LastSuccessCompleteTime\": null,\r\n        \"SuccessCallCount\": 0,\r\n        \"SMSCount\": 0,\r\n        \"Position\": 3\r\n    },\r\n    {\r\n        \"OutgoingRuleId\": \"0f8765f2-e7e4-4990-b9d9-c14e5ae4b438\",\r\n        \"UserId\": \"0f8765f2-e7e4-4990-b9d9-c14e5ae4b444\",\r\n        \"UserExternalId\": null,\r\n        \"UserName\": \"v1\",\r\n        \"UserPhone\": \"p1\",\r\n        \"UserProperties\": null,\r\n        \"TextToSpeech\": \"tts\",\r\n        \"ExtendedFields\": \"ef\",\r\n        \"CurrentStatus\": \"CS\",\r\n        \"LastCallTime\": null,\r\n        \"CallCount\": 0,\r\n        \"LastSuccessCompleteTime\": null,\r\n        \"SuccessCallCount\": 0,\r\n        \"SMSCount\": 0,\r\n        \"Position\": 4\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/Outgoing/rules/0f8765f2-e7e4-4990-b9d9-c14e5ae4b438/abonents",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Outgoing",
+						"rules",
+						"0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"abonents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Rule By Template",
+			"id": "1cf7745e-8970-4324-abbd-aea16ca49395",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/Outgoing/template/0f8765f2-e7e4-4990-b9d9-c14e5ae4b440/rule",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Outgoing",
+						"template",
+						"0f8765f2-e7e4-4990-b9d9-c14e5ae4b440",
+						"rule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Replace rule",
+			"id": "a3e26b5c-bba1-414a-9e29-79018b387f57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"CustomField1\": null,\r\n    \"Name\": \"n\",\r\n    \"ScriptId\": null,\r\n    \"Script\": null,\r\n    \"WorkCalendarId\": null,\r\n    \"WorkCalendar\": null,\r\n    \"MasterScriptId\": null,\r\n    \"MasterScript\": null,\r\n    \"WithRecord\": false,\r\n    \"SimultaneouslyCalling\": 0,\r\n    \"OutgoingLine\": \"\",\r\n    \"VirtualLineId\": null,\r\n    \"VirtualLine\": null,\r\n    \"CurrentStatus\": \"norm\",\r\n    \"TextToSpeech\": \"\",\r\n    \"StartDate\": null,\r\n    \"StartDateJS\": \"2024-02-02\",\r\n    \"EndDate\": \"2024-02-04\",\r\n    \"EndDateJS\": \"2024-02-02\",\r\n    \"IsActual\": false,\r\n    \"Description\": \"desc\",\r\n    \"MaxCallsCount\": 0,\r\n    \"TimeBetweenCalls\": 0,\r\n    \"ExtendedFields\": \"\",\r\n    \"CreatedDate\": \"2024-02-02\",\r\n    \"Abonents\": [],\r\n    \"CountAbonents\": 10,\r\n    \"IsAbonentsLoadedFully\": false,\r\n    \"RuleType\": \"rt\",\r\n    \"Id\": \"ab7126cc-3b33-4603-8263-0291e104391a\",\r\n    \"IsDeleted\": false,\r\n    \"IsSaved\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/Outgoing/rule/0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Outgoing",
+						"rule",
+						"0f8765f2-e7e4-4990-b9d9-c14e5ae4b438"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update rule",
+			"id": "0514a410-7d9f-4c45-817e-774135ef5d43",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"op\": \"replace\",\r\n    \"path\": \"/Name\",\r\n    \"value\": \"New Name Updated\"\r\n  },\r\n  {\r\n    \"op\": \"remove\",\r\n    \"path\": \"/Description\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/Outgoing/rules/0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"Outgoing",
+						"rules",
+						"0f8765f2-e7e4-4990-b9d9-c14e5ae4b438"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "219ce44f-ddf4-4e69-a920-573dc020b950",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1828b804-52b0-49cc-ba9b-0a3de16ad56a",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "e36db8ca-9617-47a2-82fb-bd00f1194ec2",
+			"key": "host",
+			"value": "astra.vocamate.ru"
+		},
+		{
+			"id": "54e45b9e-384c-444b-9ac7-465bdfc64308",
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+		},
+		{
+			"id": "f996cef8-0df2-4140-ab2b-a085c715e51f",
+			"key": "entityId",
+			"value": "badc98d4-2157-43fb-8edf-608dbdedec6d"
+		}
+	]
+}

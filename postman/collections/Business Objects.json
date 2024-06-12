@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "e2ff1312-44f2-4e41-881d-7f14e635fade",
+		"name": "Business Objects",
+		"description": "API для работы с исходящим кампании и справочниками",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "10763179-e2ff1312-44f2-4e41-881d-7f14e635fade"
+	},
+	"item": [
+		{
+			"name": "Get Business Objects",
+			"id": "018f154e-474e-4dad-974a-6d313c1c4d57",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Business Object",
+			"id": "e75d8af1-691c-4307-89e2-5cbca4059cac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects/e4bcc39f-d06c-4f13-9c3c-83feefb70015",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects",
+						"e4bcc39f-d06c-4f13-9c3c-83feefb70015"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Business items",
+			"id": "c74760e4-4f4e-4356-b527-b933faa89418",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects/e6bfd5ab-fdc2-4bdc-8545-55e1126c3b72/items",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects",
+						"e6bfd5ab-fdc2-4bdc-8545-55e1126c3b72",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Business Object",
+			"id": "47e5fbf8-60a3-4521-a68c-a50a08cca68c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects/d4167ccd-ff2e-461d-95ff-8fbde860de53",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects",
+						"d4167ccd-ff2e-461d-95ff-8fbde860de53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Business Object",
+			"id": "98e7dcfc-abca-41fc-810e-7d322a20630b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{        \r\n        \"Name\": \"Информация об авариях Воронеж new\",\r\n        \"Cod\": null,\r\n        \"IsFolder\": false,\r\n        \"ParentId\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rename Business Object",
+			"id": "7f27695c-c0e8-4f3b-9316-1ce709681529",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"op\": \"replace\",\r\n    \"path\": \"/Name\",\r\n    \"value\": \"New Name Updated\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects/d4167ccd-ff2e-461d-95ff-8fbde860de53",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects",
+						"d4167ccd-ff2e-461d-95ff-8fbde860de53"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Business Object items",
+			"id": "4dd6e09d-1f2c-4463-9b57-7d72179ca4e0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    \r\n[\r\n        {\r\n            \"ExtId\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n            \"Name\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n            \"Cod\": \"Export\",\r\n            \"Properties\": {\r\n                \"ID_документа\": \"c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n                \"Дата_Документа\": \"2024.04.11 09:29:00\",\r\n                \"Код_ФИАС\": \"61cf79c4-0d97-411a-ba46-e581137c7f10\",\r\n                \"Вид_ресурса\": \"ГВС\",\r\n                \"Тип_Работ\": \"0\",\r\n                \"Дата_начала_плановая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_плановая\": \"2024.04.11 14:00:00\",\r\n                \"Дата_начала_фактическая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_фактическая\": \"2024.04.11 09:40:00\"\r\n            }\r\n        },{\r\n            \"ExtId\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a6\",\r\n            \"Name\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a6\",\r\n            \"Cod\": \"Export\",\r\n            \"Properties\": {\r\n                \"ID_документа\": \"c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n                \"Дата_Документа\": \"2024.04.11 09:29:00\",\r\n                \"Код_ФИАС\": \"61cf79c4-0d97-411a-ba46-e581137c7f10\",\r\n                \"Вид_ресурса\": \"ГВС\",\r\n                \"Тип_Работ\": \"0\",\r\n                \"Дата_начала_плановая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_плановая\": \"2024.04.11 14:00:00\",\r\n                \"Дата_начала_фактическая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_фактическая\": \"2024.04.11 09:40:00\"\r\n            }\r\n        }\r\n        ,{\r\n            \"ExtId\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a7\",\r\n            \"Name\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a7\",\r\n            \"Cod\": \"Export\",\r\n            \"Properties\": {\r\n                \"ID_документа\": \"c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n                \"Дата_Документа\": \"2024.04.11 09:29:00\",\r\n                \"Код_ФИАС\": \"61cf79c4-0d97-411a-ba46-e581137c7f10\",\r\n                \"Вид_ресурса\": \"ГВС\",\r\n                \"Тип_Работ\": \"0\",\r\n                \"Дата_начала_плановая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_плановая\": \"2024.04.11 14:00:00\",\r\n                \"Дата_начала_фактическая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_фактическая\": \"2024.04.11 09:40:00\"\r\n            }\r\n        }\r\n    ]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects/b0b26fcc-4342-4b37-93b3-c986cf92c4d1/items",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects",
+						"b0b26fcc-4342-4b37-93b3-c986cf92c4d1",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Operation Status",
+			"id": "52a8fd38-2e1d-496f-a4c7-c4383d44a1a5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refName\": \"Информация об авариях Воронеж - API\",\r\n    \"data\": [\r\n        {\r\n            \"ExtId\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n            \"Name\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n            \"Cod\": \"Export\",\r\n            \"Properties\": {\r\n                \"ID_документа\": \"c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n                \"Дата_Документа\": \"2024.04.11 09:29:00\",\r\n                \"Код_ФИАС\": \"61cf79c4-0d97-411a-ba46-e581137c7f10\",\r\n                \"Вид_ресурса\": \"ГВС\",\r\n                \"Тип_Работ\": \"0\",\r\n                \"Дата_начала_плановая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_плановая\": \"2024.04.11 14:00:00\",\r\n                \"Дата_начала_фактическая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_фактическая\": \"2024.04.11 09:40:00\"\r\n            }\r\n        },{\r\n            \"ExtId\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n            \"Name\": \"20240411_101501_469_c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n            \"Cod\": \"Export\",\r\n            \"Properties\": {\r\n                \"ID_документа\": \"c15c334b-3e57-4f9c-ba11-27cd106335a5\",\r\n                \"Дата_Документа\": \"2024.04.11 09:29:00\",\r\n                \"Код_ФИАС\": \"61cf79c4-0d97-411a-ba46-e581137c7f10\",\r\n                \"Вид_ресурса\": \"ГВС\",\r\n                \"Тип_Работ\": \"0\",\r\n                \"Дата_начала_плановая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_плановая\": \"2024.04.11 14:00:00\",\r\n                \"Дата_начала_фактическая\": \"2024.04.11 08:50:00\",\r\n                \"Дата_окончания_фактическая\": \"2024.04.11 09:40:00\"\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects/operations/bda7bd01-6dce-47ca-b1d2-76128046e4f7/status",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects",
+						"operations",
+						"bda7bd01-6dce-47ca-b1d2-76128046e4f7",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear Business Object items",
+			"id": "e909d616-800a-441b-b726-deef23c0e099",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6Ik1heGltIE1vaXNlZXYiLCJpYXQiOjE1MTYyMzkwMjJ9.nU3_cKX_grSlJ-77qd4en9ntlBJS0pc9sfLB7vIdr5I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "id",
+						"value": "0f8765f2-e7e4-4990-b9d9-c14e5ae4b438",
+						"disabled": true
+					},
+					{
+						"key": "entityId",
+						"value": "477dfb9b-6058-4599-903c-50a6806445ed"
+					}
+				],
+				"url": {
+					"raw": "https://{{host}}/api/BussinesObjects/083ef9d7-78eb-4d97-b7c7-c7dd7ea40922/items",
+					"protocol": "https",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"BussinesObjects",
+						"083ef9d7-78eb-4d97-b7c7-c7dd7ea40922",
+						"items"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d94b9c1e-5cd2-45c3-bae6-da4525d7b5cd",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8100104e-ba07-4215-9658-de80b68ae0b5",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c6de58ab-5606-4447-9f03-5cf63f18866a",
+			"key": "host",
+			"value": "astra.vocamate.ru"
+		},
+		{
+			"id": "b7bc6cec-d090-49b3-bd3e-d26ccf7881e0",
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+		},
+		{
+			"id": "77d9d3b1-dc0a-401e-859b-ca059bd2e99d",
+			"key": "entityId",
+			"value": "badc98d4-2157-43fb-8edf-608dbdedec6d"
+		}
+	]
+}
